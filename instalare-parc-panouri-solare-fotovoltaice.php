@@ -31,7 +31,7 @@
   	    	echo " <!-- " . $subCategory . " -->
 	     		   <div class='col-lg-12'>
 	               <i class='icon-th-large icon-1x pull-left icon-border'></i>
-	               <h2>Double glass</h2>
+	               <h2>" . $subCategory . "</h2>
 	               <hr>";
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
@@ -92,43 +92,43 @@
         <div class="col-lg-12">
 			<div class="well well-large well-transparent clearfix">
 		        <i class="icon-th-large icon-3x pull-left icon-border"></i>
-		        <h1>Panouri pentru parcuri solare fotovoltaice</h1>
+		        <h1>Instalare separata parcuri solare fotovoltaice</h1>
 		         
 	        </div>
 	        <ul class="icons-ul">
-			  <li><i class="icon-li icon-ok"></i>Oferim panouri solare de tip MONO si POLY</li>
-			  <li><i class="icon-li icon-ok"></i>Cu cristale mono cristaline si poli cristaline</li>
-			  <li><i class="icon-li icon-ok"></i>De marimea 5" sau 6"</li>
-			  <li><i class="icon-li icon-ok"></i>Modulele contin 60 sau 72 de celule</li>
-			  <li><i class="icon-li icon-ok"></i>Sunt certificate TUV si UL</li>
-			  <li><i class="icon-li icon-ok"></i>Procesul de fabricatie este supus unui control de calitate strict</li>
+			  <li><i class="icon-li icon-ok"></i>Oferim instalare separata a parcurilor 
+			  									 fotovoltaice. Am acumulat experienta de-a lungul timpului in 
+			  									 diverse proiecte atat pe teritoriul Romaniei, cat si in afara tarii.
+			  </li>
+			  </ul>
+			  <ul class="icons-ul">
+			  <li><i class="icon-li icon-ok"></i>Firma noastra a fost infiintata in anul 2006 si am avut numeroase colaborari atat in domeniul instalarii parcurilor fotovoltaice,
+												cat si cel al parapetului metalic rutier. Printre firmele cu care am colaborat se numara si:
+												FCC, Aktor, Max Boegl, Alpine, Fracass atat in Romania cat si in Bulgaria, Ungaria si Polonia. Oferim servicii separate de batere stalpi pentru orice
+												proiect in Romania sau in afara tarii.</li>
+			  </ul>
+			  <ul class="icons-ul">
+			  <li><i class="icon-li icon-ok"></i>În portofoliul nostru de lucrări există atât proiecte naționale cât și internaționale, 
+												  în fiecare situație reușind să executăm lucrări de montaj la cel mai înalt nivel 
+												  de calitate. În lungul anilor am reușit să automatizăm și să optimizăm la maximum 
+												  atât procesul de montaj cât și resursa umană implică în acest proces. În prezent suntem 
+												  capabili să executăm lucrări într-un timp record și la costuri competitive. Atenția permanentă 
+												  acordată calității lucrărilor executate a condus la rezultate exceptionale la fiecare lucrare 
+												  (până în prezent toate lucrările prestate de compania Unimat au fost recepționate de beneficiari 
+												  fără nicio problemă).</li>
+			  </ul>
+			  <ul class="icons-ul">								  
+			  <li><i class="icon-li icon-ok"></i>În prezent oferim toată gama de servicii asociate montajului sistemelor de siguranță rutiere și a sistemelor de tip panouri foto-voltaice. Toate servicile noastre sunt conforme cu normele naționale și europene în vigoare. Suntem capabili să oferim atât consultanță cât și montaj la cel mai înalt standard de calitate, în cel mai scurt timp și la un cost competitiv. </li>
 			</ul>
 			<h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
         </div>
         
-        <?php displayCategory("Module fotovoltaice de tip ET");?>
+        <?php displayCategory("Proiecte de montaj parcuri fotovoltaice");?>
 	     
-	    <?php displaySubCategory("Mono series", $monoSeriesThumbsArray);?>
-	    
-        <?php displaySubCategory("Poly series", $polySeriesThumbsArray);?>
-          
-        <?php displayCategory("Module fotovoltaice de tip BIPV");?>
-	     
-	    <?php displaySubCategory("Double glass", $polySeriesThumbsArray);?>
-	      
-	    <?php displaySubCategory("Transparent", $polySeriesThumbsArray);?>
-        
-        <?php displaySubCategory("Frameless", $polySeriesThumbsArray);?>
-        
-        <?php displayCategory("Invertoare");?>
-        
-        <div class="col-lg-12">
-	        <ul class="icons-ul">
-			  <li><i class="icon-li icon-ok"></i>Oferim o gama completa de produse 
-			  inclusiv invertoare dolare, accesorii si service. Invertoarele de tip Omnik se potrivesc cu toate modulele
-			  solare de tip rezidential si comercial.</li>
-			</ul>
-        </div>
+	    <?php displaySubCategory("Parc instalat panouri solare-fotovoltaice Satu-Mare 1MW", $monoSeriesThumbsArray);?>
+         
+        <?php displaySubCategory("Parc instalat panouri solare-fotovoltaice Braila 3MW", $monoSeriesThumbsArray);?>
+         
       </div>
       <h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
        <?php require_once('footer.php'); ?>

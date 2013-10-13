@@ -15,5 +15,7 @@
     <!-- Custom CSS for the 'Heroic Features' Template -->
     <link href="css/<?php echo $cssType;?>" rel="stylesheet">
     
+    <!-- Custom CSS for Social Buttons -->
+    <link href="css/social-buttons.css" rel="stylesheet"> 
     
 </head>

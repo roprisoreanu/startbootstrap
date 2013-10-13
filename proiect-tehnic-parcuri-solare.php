@@ -31,7 +31,7 @@
   	    	echo " <!-- " . $subCategory . " -->
 	     		   <div class='col-lg-12'>
 	               <i class='icon-th-large icon-1x pull-left icon-border'></i>
-	               <h2>Double glass</h2>
+	               <h2>" . $subCategory . "</h2>
 	               <hr>";
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
@@ -92,45 +92,16 @@
         <div class="col-lg-12">
 			<div class="well well-large well-transparent clearfix">
 		        <i class="icon-th-large icon-3x pull-left icon-border"></i>
-		        <h1>Panouri pentru parcuri solare fotovoltaice</h1>
+		        <h1>Proiecte tehnice pentru parcuri panouri solare</h1>
 		         
 	        </div>
 	        <ul class="icons-ul">
-			  <li><i class="icon-li icon-ok"></i>Oferim panouri solare de tip MONO si POLY</li>
-			  <li><i class="icon-li icon-ok"></i>Cu cristale mono cristaline si poli cristaline</li>
-			  <li><i class="icon-li icon-ok"></i>De marimea 5" sau 6"</li>
-			  <li><i class="icon-li icon-ok"></i>Modulele contin 60 sau 72 de celule</li>
-			  <li><i class="icon-li icon-ok"></i>Sunt certificate TUV si UL</li>
-			  <li><i class="icon-li icon-ok"></i>Procesul de fabricatie este supus unui control de calitate strict</li>
-			</ul>
+			  <li><i class="icon-li icon-ok"></i>În prezent oferim toată gama de servicii asociate montajului sistemelor de siguranță rutiere și a sistemelor de tip panouri foto-voltaice. Toate servicile noastre sunt conforme cu normele naționale și europene în vigoare. Suntem capabili să oferim atât consultanță cât și montaj la cel mai înalt standard de calitate, în cel mai scurt timp și la un cost competitiv. Realizam proiecte tehnice pentru construire (obtinerea autorizatiei de constructie - DTAC, Proiect tehnic -PT, Proiect detalii de executie - DE). 
+			  </li>
+			  </ul>
 			<h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
         </div>
-        
-        <?php displayCategory("Module fotovoltaice de tip ET");?>
-	     
-	    <?php displaySubCategory("Mono series", $monoSeriesThumbsArray);?>
-	    
-        <?php displaySubCategory("Poly series", $polySeriesThumbsArray);?>
-          
-        <?php displayCategory("Module fotovoltaice de tip BIPV");?>
-	     
-	    <?php displaySubCategory("Double glass", $polySeriesThumbsArray);?>
-	      
-	    <?php displaySubCategory("Transparent", $polySeriesThumbsArray);?>
-        
-        <?php displaySubCategory("Frameless", $polySeriesThumbsArray);?>
-        
-        <?php displayCategory("Invertoare");?>
-        
-        <div class="col-lg-12">
-	        <ul class="icons-ul">
-			  <li><i class="icon-li icon-ok"></i>Oferim o gama completa de produse 
-			  inclusiv invertoare dolare, accesorii si service. Invertoarele de tip Omnik se potrivesc cu toate modulele
-			  solare de tip rezidential si comercial.</li>
-			</ul>
-        </div>
       </div>
-      <h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
        <?php require_once('footer.php'); ?>
     </div><!-- /.container -->
 

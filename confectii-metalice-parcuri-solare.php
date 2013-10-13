@@ -31,7 +31,7 @@
   	    	echo " <!-- " . $subCategory . " -->
 	     		   <div class='col-lg-12'>
 	               <i class='icon-th-large icon-1x pull-left icon-border'></i>
-	               <h2>Double glass</h2>
+	               <h2>" . $subCategory . "</h2>
 	               <hr>";
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
@@ -92,45 +92,16 @@
         <div class="col-lg-12">
 			<div class="well well-large well-transparent clearfix">
 		        <i class="icon-th-large icon-3x pull-left icon-border"></i>
-		        <h1>Panouri pentru parcuri solare fotovoltaice</h1>
+		        <h1>Oferim confectii metalice pentru parcuri solare fotovoltaice</h1>
 		         
 	        </div>
 	        <ul class="icons-ul">
-			  <li><i class="icon-li icon-ok"></i>Oferim panouri solare de tip MONO si POLY</li>
-			  <li><i class="icon-li icon-ok"></i>Cu cristale mono cristaline si poli cristaline</li>
-			  <li><i class="icon-li icon-ok"></i>De marimea 5" sau 6"</li>
-			  <li><i class="icon-li icon-ok"></i>Modulele contin 60 sau 72 de celule</li>
-			  <li><i class="icon-li icon-ok"></i>Sunt certificate TUV si UL</li>
-			  <li><i class="icon-li icon-ok"></i>Procesul de fabricatie este supus unui control de calitate strict</li>
-			</ul>
+			  <li><i class="icon-li icon-ok"></i>Oferim solutia completa de confectii metalice pentru parcurile foto-voltaice.
+			  </li>
+			  </ul>
 			<h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
         </div>
-        
-        <?php displayCategory("Module fotovoltaice de tip ET");?>
-	     
-	    <?php displaySubCategory("Mono series", $monoSeriesThumbsArray);?>
-	    
-        <?php displaySubCategory("Poly series", $polySeriesThumbsArray);?>
-          
-        <?php displayCategory("Module fotovoltaice de tip BIPV");?>
-	     
-	    <?php displaySubCategory("Double glass", $polySeriesThumbsArray);?>
-	      
-	    <?php displaySubCategory("Transparent", $polySeriesThumbsArray);?>
-        
-        <?php displaySubCategory("Frameless", $polySeriesThumbsArray);?>
-        
-        <?php displayCategory("Invertoare");?>
-        
-        <div class="col-lg-12">
-	        <ul class="icons-ul">
-			  <li><i class="icon-li icon-ok"></i>Oferim o gama completa de produse 
-			  inclusiv invertoare dolare, accesorii si service. Invertoarele de tip Omnik se potrivesc cu toate modulele
-			  solare de tip rezidential si comercial.</li>
-			</ul>
-        </div>
       </div>
-      <h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
        <?php require_once('footer.php'); ?>
     </div><!-- /.container -->
 

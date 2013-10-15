@@ -17,5 +17,8 @@
     
     <!-- Custom CSS for Social Buttons -->
     <link href="css/social-buttons.css" rel="stylesheet"> 
-    
+    <!-- Custom CSS for Unimat -->
+    <style>
+		.thumbnail {margin:10px;}
+	</style> 
 </head>

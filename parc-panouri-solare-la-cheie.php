@@ -6,16 +6,42 @@
 	    $htmlDescription = "Parcuri solare fotovoltaice, solutii complete la cheie";
   		require_once 'header.php';
   		
-  	    $monoSeriesThumbsArray = array('http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
+  	    $monoSeriesThumbsArray = array('img/magazin-online/monocristaline/ET-M572BB-180W-205W',
+					  	    		   'img/magazin-online/monocristaline/ET-M660BB-235W-255W',
+					  	    		   'img/magazin-online/monocristaline/ET-M672BB-280W-305W',
+					  	    		   'img/magazin-online/monocristaline/ET-M572WW-185W-210W',
+						  	    	   'img/magazin-online/monocristaline/ET-M660WW-235W-260W',
+						  	    	   'img/magazin-online/monocristaline/ET-M672WW-280W-310W',
 					  	    	);
-  	    $polySeriesThumbsArray = array('http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
+  	    $polySeriesThumbsArray = array('img/magazin-online/policristaline/ET-P660BB-225W-255W',
+					  	    		   'img/magazin-online/policristaline/ET-P660BB-225W-255W',
+					  	    		   'img/magazin-online/policristaline/ET-P672WB-WW-270W-300W',
+					  	    		   'img/magazin-online/policristaline/ET-P672BB-270W-300W',
 					  	    	);
+  	    
+  	    $doubleGlassThumbsArray  = array('img/magazin-online/double-glass/modul-double-glass',
+					  	    	);
+  	    
+  	    $transparentThumbsArray  = array('img/magazin-online/transparente/M572TL-180W-200W',
+						  	    		'img/magazin-online/transparente/M572TW-180W-200W',
+						  	    		'img/magazin-online/transparente/M660TW-235W-255W',
+						  	    		'img/magazin-online/transparente/M672TW-280W-305W',
+						  	    		'img/magazin-online/transparente/P660TW-225W-250W',
+						  	    		'img/magazin-online/transparente/P672TW-270W-300W',
+  	    );
+  	    
+  	    $framelessThumbsArray  = array('img/magazin-online/frameless/ET-M572BL-180W-200W',
+					  	    		   'img/magazin-online/frameless/ET-M572WL-185W-205W',
+					  	    		   'img/magazin-online/frameless/ET-P660WL-225W-250W',
+					  	    		   'img/magazin-online/frameless/ET-P672WL-270W-300W',
+					  	    	);
+  	    $inverterThumbsArray  = array('img/magazin-online/invertoare/13kw17kw20kw',
+					  	    		   'img/magazin-online/invertoare/1kw15kw2kw',
+					  	    		   'img/magazin-online/invertoare/3k5kw',
+					  	    		   'img/magazin-online/invertoare/3kw4kw5kw',
+					  	    	);
+  	    
+  	    
   	    
   	    function displayCategory($category) {
   	    	echo "<hr>
@@ -26,17 +52,17 @@
 	  	    	<h1 class='page-header'>" . $category . "</h1>
 	  	    	</div>";
   	    }
-  	    
+  	    $counter = 0;
   	    function displaySubCategory($subCategory, $thumbsArray) {
   	    	echo " <!-- " . $subCategory . " -->
 	     		   <div class='col-lg-12'>
 	               <i class='icon-th-large icon-1x pull-left icon-border'></i>
-	               <h2>Double glass</h2>
+	               <h2>" . $subCategory ."</h2>
 	               <hr>";
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
 		         	   <a class='thumbnail' href='#'><img class='img-responsive' 
-		         	   src=" . $placeHolder . "/400x300'></a>
+		         	   src=" . $placeHolder . "></a>
 		         	   </div>";
 	          } 
 	         echo "</div>
@@ -59,21 +85,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+            <div class="fill" style="background-image:url('img/magazin-online/fotovoltaice-monocristaline-180W-1900x1080.gif')"></div>
             <div class="carousel-caption">
-              <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
+              <h1>Panouri fotovoltaice monocristaline</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+            <div class="fill" style="background-image:url('img/magazin-online/fotovoltaice-policristaline-660W-1900x1080.gif');"></div>
             <div class="carousel-caption">
-              <h1>Caption 2</h1>
+              <h1>Panouri fotovoltaice policristaline</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="fill" style="background-image:url('img/magazin-online/invertoare-1900x1080.gif');"></div>
             <div class="carousel-caption">
-              <h1>Caption 3</h1>
+              <h1>Invertoare</h1>
             </div>
           </div>
         </div>
@@ -114,14 +140,17 @@
           
         <?php displayCategory("Module fotovoltaice de tip BIPV");?>
 	     
-	    <?php displaySubCategory("Double glass", $polySeriesThumbsArray);?>
+	    <?php displaySubCategory("Double glass", $doubleGlassThumbsArray);?>
 	      
-	    <?php displaySubCategory("Transparent", $polySeriesThumbsArray);?>
+	    <?php displaySubCategory("Transparent", $transparentThumbsArray);?>
         
-        <?php displaySubCategory("Frameless", $polySeriesThumbsArray);?>
+        <?php displaySubCategory("Frameless", $framelessThumbsArray);?>
         
         <?php displayCategory("Invertoare");?>
+       
+        <?php displaySubCategory("Invertoare de tip ET", $inverterThumbsArray);?>
         
+        <hr>
         <div class="col-lg-12">
 	        <ul class="icons-ul">
 			  <li><i class="icon-li icon-ok"></i>Oferim o gama completa de produse 

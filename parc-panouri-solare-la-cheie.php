@@ -41,8 +41,7 @@
 					  	    		   'img/magazin-online/invertoare/3kw4kw5kw',
 					  	    	);
   	    
-  	    
-  	    
+  	      	    
   	    function displayCategory($category) {
   	    	echo "<hr>
 	  	    	<div class='clearfix'></div>

@@ -6,16 +6,16 @@
 	    $htmlDescription = "Parcuri solare fotovoltaice, solutii complete la cheie";
   		require_once 'header.php';
   		
-  	    $monoSeriesThumbsArray = array('http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
+  	    $satuMareThumbsArray = array('img/portofoliu/montare-panouri-fotovoltaice.png',
+					  	    		 'img/portofoliu/montare-panouri-parc-fotovoltaic.png',
+					  	    		 'img/portofoliu/montare-panouri-parc-solar.jpg',
+  	    							 'img/portofoliu/montare-panouri-parc-solar.jpg',
 					  	    	);
-  	    $polySeriesThumbsArray = array('http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    	);
+  	    $brailaThumbsArray = array('img/portofoliu/montare-panouri-fotovoltaice.png',
+					  	    	   'img/portofoliu/montare-panouri-parc-fotovoltaic.png',
+					  	    	   'img/portofoliu/montare-panouri-parc-solar.jpg',
+  	    		                   'img/portofoliu/montare-panouri-parc-solar.jpg',
+					  	     );
   	    
   	    function displayCategory($category) {
   	    	echo "<hr>
@@ -36,7 +36,7 @@
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
 		         	   <a class='thumbnail' href='#'><img class='img-responsive' 
-		         	   src=" . $placeHolder . "/400x300'></a>
+		         	   src=" . $placeHolder . "></a>
 		         	   </div>";
 	          } 
 	         echo "</div>
@@ -59,19 +59,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+            <div class="fill" style="background-image:url('img/portofoliu/montare-panouri-fotovoltaice.png');"></div>
             <div class="carousel-caption">
               <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+            <div class="fill" style="background-image:url('img/portofoliu/montare-panouri-parc-fotovoltaic.png');"></div>
             <div class="carousel-caption">
               <h1>Caption 2</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="fill" style="background-image:url('img/portofoliu/montare-panouri-parc-solar.jpg');"></div>
             <div class="carousel-caption">
               <h1>Caption 3</h1>
             </div>
@@ -125,9 +125,9 @@
         
         <?php displayCategory("Proiecte de montaj parcuri fotovoltaice");?>
 	     
-	    <?php displaySubCategory("Parc instalat panouri solare-fotovoltaice Satu-Mare 1MW", $monoSeriesThumbsArray);?>
+	    <?php displaySubCategory("Parc instalat panouri solare-fotovoltaice Satu-Mare 1MW", $satuMareThumbsArray);?>
          
-        <?php displaySubCategory("Parc instalat panouri solare-fotovoltaice Braila 3MW", $monoSeriesThumbsArray);?>
+        <?php displaySubCategory("Parc instalat panouri solare-fotovoltaice Braila 3MW", $brailaThumbsArray);?>
          
       </div>
       <h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>

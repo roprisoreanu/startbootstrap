@@ -6,11 +6,24 @@
 	    $htmlDescription = "Echipament parcuri fotovoltaice";
   		require_once 'header.php';
   		
-  	    $monoSeriesThumbsArray = array('http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    		   'http://placehold.it',
-					  	    	);
+  	    $equipmentThumbsArray = array('img/echipament/batipal-pauselli.JPG',
+			  	    		    'img/echipament/batipal-pauselli-spate.JPG',
+			  	    		    'img/echipament/batipal-turchi.JPG',
+				  	    	    'img/echipament/camion-cu-datele-unimat.JPG',
+				  	    	    'img/echipament/camion-macara.JPG',
+				  	    	    'img/echipament/camion-macara-lateral.JPG',
+				  	    		'img/echipament/camion-mercedes-fata.JPG',
+				  	    		'img/echipament/camion-mercedes.JPG',
+				  	    		'img/echipament/camion-mercedes-lateral.JPG',
+				  	    		'img/echipament/camion-merces-aproape.JPG',
+				  	    		'img/echipament/camion-unimat-mercedes.JPG',
+				  	    		'img/echipament/compresor.JPG',
+				  	    		'img/echipament/compresor-spate.JPG',
+				  	    		'img/echipament/motostivuitor-lateral.JPG',
+				  	    		'img/echipament/peugeot.JPG',
+				  	    		'img/echipament/peugeot.JPG',
+				  	    		'img/echipament/peugeot-lateral.JPG',
+					  	  );
   	    $polySeriesThumbsArray = array('http://placehold.it',
 					  	    		   'http://placehold.it',
 					  	    		   'http://placehold.it',
@@ -53,7 +66,7 @@
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
 		         	   <a class='thumbnail' href='#'><img class='img-responsive' 
-		         	   src=" . $placeHolder . "/400x300'></a>
+		         	   src=" . $placeHolder . "></a>
 		         	   </div>";
 	          } 
 	         echo "</div>
@@ -88,21 +101,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+            <div class="fill" style="background-image:url('img/echipament/camion-unimat-mercedes.JPG');"></div>
             <div class="carousel-caption">
-              <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
+              <h1>Echipament</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+            <div class="fill" style="background-image:url('img/echipament/camion-mercedes-fata.JPG');"></div>
             <div class="carousel-caption">
-              <h1>Caption 2</h1>
+              <h1>Echipament</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="fill" style="background-image:url('img/echipament/camion-macara.JPG');"></div>
             <div class="carousel-caption">
-              <h1>Caption 3</h1>
+              <h1>Echipament</h1>
             </div>
           </div>
         </div>
@@ -125,6 +138,7 @@
 		         
 	        </div>
 	      <?php displayEquipment($equipmentArray);?>
+	      <?php displaySubCategory('Echipamente Unimat', $equipmentThumbsArray) ?>
 		
 			<h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
         </div>

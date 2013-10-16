@@ -59,19 +59,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+            <div class="fill" style="background-image:url('img/structuri-metalice/structuri-metalice.jpg');"></div>
             <div class="carousel-caption">
               <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+            <div class="fill" style="background-image:url('img/structuri-metalice/structura-melica-zoom.jpg');"></div>
             <div class="carousel-caption">
               <h1>Caption 2</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="fill" style="background-image:url('img/structuri-metalice/High-tension-powerline-cables-supporting-tower-structure-2321400.jpg');"></div>
             <div class="carousel-caption">
               <h1>Caption 3</h1>
             </div>

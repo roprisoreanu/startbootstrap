@@ -67,13 +67,13 @@
           <div class="item">
             <div class="fill" style="background-image:url('img/portofoliu/montare-panouri-parc-fotovoltaic.png');"></div>
             <div class="carousel-caption">
-              <h1>Caption 2</h1>
+              <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
             </div>
           </div>
           <div class="item">
             <div class="fill" style="background-image:url('img/portofoliu/montare-panouri-parc-solar.jpg');"></div>
             <div class="carousel-caption">
-              <h1>Caption 3</h1>
+              <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
             </div>
           </div>
         </div>

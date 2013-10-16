@@ -86,13 +86,13 @@
           <div class="item active">
             <div class="fill" style="background-image:url('img/magazin-online/fotovoltaice-monocristaline-180W-1900x1080.gif')"></div>
             <div class="carousel-caption">
-              <h1>Panouri fotovoltaice monocristaline</h1>
+              <h1><span class='green-h1'>Panouri fotovoltaice monocristaline</span></h1>
             </div>
           </div>
           <div class="item">
             <div class="fill" style="background-image:url('img/magazin-online/fotovoltaice-policristaline-660W-1900x1080.gif');"></div>
             <div class="carousel-caption">
-              <h1>Panouri fotovoltaice policristaline</h1>
+              <h1><span class='green-h1'>Panouri fotovoltaice policristaline</span></h1>
             </div>
           </div>
           <div class="item">

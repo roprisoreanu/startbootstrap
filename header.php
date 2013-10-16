@@ -20,5 +20,9 @@
     <!-- Custom CSS for Unimat -->
     <style>
 		.thumbnail {margin:10px;}
+		.jumbotron, .thumbnail {
+   			 background-image:url('img/proiect-tehnic-executie/green leaves reflecting in the water, shallow focus _10231969.jpg');}
+		.green-h1 { color:#006A4D; }
+		
 	</style> 
 </head>

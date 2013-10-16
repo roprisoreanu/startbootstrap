@@ -59,21 +59,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+            <div class="fill" style="background-image:url('img/proiect-tehnic-executie/drawing circle with a compass on a blueprint _7945132.jpg');"></div>
             <div class="carousel-caption">
-              <h1>Oferim panouri pentru parcuri solare fotovoltaice</h1>
+              <h1>Proiecte tehnice energie regenerabila</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+            <div class="fill" style="background-image:url('img/proiect-tehnic-executie/Photo of green plant between male hands on a black background _10494934.jpg');"></div>
             <div class="carousel-caption">
-              <h1>Caption 2</h1>
+              <h1>Proiecte tehnice energie regenerabila</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+            <div class="fill" style="background-image:url('img/proiect-tehnic-executie/green leaves reflecting in the water, shallow focus _10231969.jpg');"></div>
             <div class="carousel-caption">
-              <h1>Caption 3</h1>
+              <h1>Proiecte tehnice energie regenerabila</h1>
             </div>
           </div>
         </div>

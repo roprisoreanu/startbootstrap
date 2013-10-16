@@ -57,7 +57,7 @@
           <div class="thumbnail">
             <!-- <img src="http://placehold.it/800x500" alt=""> -->
             <div class="caption">
-              <h3>Instalare parcuri solare</h3>
+              <h3><span class='green-h1'>Instalare parcuri solare</span></h3>
               <p>Oferim instalare separata pentru parcuri fotovoltaice</p>
               <p><a href="" class="btn btn-primary">Contactati-ne</a> 
               <a href="instalare-parc-panouri-solare-fotovoltaice.php" class="btn btn-default">Detalii</a></p>
@@ -83,7 +83,7 @@
             <!-- <img src="http://placehold.it/800x500" alt=""> -->
             <div class="caption">
               <h3>Proiect tehnic de executie</h3>
-              <p>Oferim separat proiect tehnic</p>
+              <p>Oferim separat proiect tehnic de executie</p>
               <p><a href="#" class="btn btn-primary">Contactati-ne</a> 
               <a href="proiect-tehnic-parcuri-solare.php" class="btn btn-default">Detalii</a></p>
             </div>

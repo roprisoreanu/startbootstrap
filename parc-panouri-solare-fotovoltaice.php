@@ -8,7 +8,6 @@
   	   require_once 'header.php';
   	?>
   <body>
-  
 	  <!-- <script>
 		(function(i,s,o,g,r,a,m){
 			i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,14 +23,14 @@
     
     <div class="container">
 
-      <div class="jumbotron hero-spacer">
-        <h1>Parcuri fotovoltaice</h1>
-        <h2>Experienta in zeci de proiecte de instalare parcuri fotovoltaice</h2>
+      <div class="jumbotron hero-spacer border-round-1px">
+        <h1><span class='move'>Parcuri fotovoltaice pentru energie verde</span></h1>
+        <h2><span class='move'>Experienta in zeci de proiecte de instalare parcuri fotovoltaice</span></h2>
         <h2>si parapete metalic rutier din 2006</h2>
-        <p><a class="btn btn-primary btn-large">Contactati-ne pentru cel mai mic pret de pe piata</a></p>
+        <p><a class="btn btn-primary btn-large btn-custom">Contactati-ne pentru cel mai mic pret de pe piata</a></p>
       </div>
       
-      <hr>
+       <div class="border-top-1px"></div>
       
       <div class="row">
         <div class="col-lg-12">
@@ -39,57 +38,55 @@
         </div>
       </div><!-- /.row -->
       
-      <div class="row text-center">
-
         <div class="col-lg-3 col-md-6 hero-feature">
-          <div class="thumbnail">
+          <div class="thumbnail border-top-4px">
             <!-- <img src="http://placehold.it/800x500" alt=""> -->
             <div class="caption">
               <h3>Parcuri solare fotovoltaice</h3>
               <p>Oferim parcuri solare fotovoltaice la cheie</p>
-              <p><a href="parc-panouri-solare-fotovoltaice.php" class="btn btn-primary">Contactati-ne</a> 
-              <a href="parc-panouri-solare-la-cheie.php" class="btn btn-default">Detalii</a></p>
+              <p><a href="parc-panouri-solare-fotovoltaice.php" class="btn btn-primary btn-custom">Contactati-ne</a> 
+              <a href="parc-panouri-solare-la-cheie.php" class="btn btn-default btn-custom-green">Detalii</a></p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 hero-feature">
-          <div class="thumbnail">
+          <div class="thumbnail border-top-4px">
             <!-- <img src="http://placehold.it/800x500" alt=""> -->
             <div class="caption">
-              <h3><span class='green-h1'>Instalare parcuri solare</span></h3>
+              <h3><span class='move'>Instalare parcuri solare</span></h3>
               <p>Oferim instalare separata pentru parcuri fotovoltaice</p>
-              <p><a href="" class="btn btn-primary">Contactati-ne</a> 
-              <a href="instalare-parc-panouri-solare-fotovoltaice.php" class="btn btn-default">Detalii</a></p>
+              <p><a href="" class="btn btn-primary btn-custom">Contactati-ne</a> 
+              <a href="instalare-parc-panouri-solare-fotovoltaice.php" class="btn btn-default btn-custom-green">Detalii</a></p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 hero-feature">
-          <div class="thumbnail">
+          <div class="thumbnail border-top-4px">
             <!-- <img src="http://placehold.it/800x500" alt=""> -->
             <div class="caption">
-              <h3>Confectii metalice</h3>
+              <h3><span class='move'>Confectii metalice</span></h3>
               <p>Oferim realizarea separata a confectiilor metalice pentru parcuri solare
                  fotovoltaice</p>
-              <p><a href="#" class="btn btn-primary">Contactati-ne</a> 
-              <a href="confectii-metalice-parcuri-solare.php" class="btn btn-default">Detalii</a></p>
+              <p><a href="#" class="btn btn-primary btn-custom">Contactati-ne</a> 
+              <a href="confectii-metalice-parcuri-solare.php" class="btn btn-default btn-custom-green">Detalii</a></p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 hero-feature">
-          <div class="thumbnail">
+          <div class="thumbnail border-top-4px">
             <!-- <img src="http://placehold.it/800x500" alt=""> -->
             <div class="caption">
-              <h3>Proiect tehnic de executie</h3>
+              <h3><span class='move'>Proiect tehnic de executie</span></h3>
               <p>Oferim separat proiect tehnic de executie</p>
-              <p><a href="#" class="btn btn-primary">Contactati-ne</a> 
-              <a href="proiect-tehnic-parcuri-solare.php" class="btn btn-default">Detalii</a></p>
+              <p><a href="#" class="btn btn-primary btn-custom">Contactati-ne</a> 
+              <a href="proiect-tehnic-parcuri-solare.php" class="btn btn-custom-green">Detalii</a></p>
             </div>
           </div>
         </div>
-
+		<div class="row text-center">
 
       </div><!-- /.row -->
       <?php require_once('footer.php'); ?>

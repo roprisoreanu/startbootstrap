@@ -6,23 +6,22 @@
 	    $htmlDescription = "Echipament parcuri fotovoltaice";
   		require_once 'header.php';
   		
-  	    $equipmentThumbsArray = array('img/echipament/batipal-pauselli.JPG',
-			  	    		    'img/echipament/batipal-pauselli-spate.JPG',
-			  	    		    'img/echipament/batipal-turchi.JPG',
-				  	    	    'img/echipament/camion-cu-datele-unimat.JPG',
-				  	    	    'img/echipament/camion-macara.JPG',
-				  	    	    'img/echipament/camion-macara-lateral.JPG',
-				  	    		'img/echipament/camion-mercedes-fata.JPG',
-				  	    		'img/echipament/camion-mercedes.JPG',
-				  	    		'img/echipament/camion-mercedes-lateral.JPG',
-				  	    		'img/echipament/camion-merces-aproape.JPG',
-				  	    		'img/echipament/camion-unimat-mercedes.JPG',
-				  	    		'img/echipament/compresor.JPG',
-				  	    		'img/echipament/compresor-spate.JPG',
-				  	    		'img/echipament/motostivuitor-lateral.JPG',
-				  	    		'img/echipament/peugeot.JPG',
-				  	    		'img/echipament/peugeot.JPG',
-				  	    		'img/echipament/peugeot-lateral.JPG',
+  	    $equipmentThumbsArray = array('img/echipament/batipal-pauselli.jpg',
+			  	    		    'img/echipament/batipal-pauselli-spate.jpg',
+			  	    		    'img/echipament/batipal-turchi.jpg',
+				  	    	    'img/echipament/camion-cu-datele-unimat.jpg',
+				  	    	    'img/echipament/camion-macara.jpg',
+				  	    	    'img/echipament/camion-macara-lateral.jpg',
+				  	    		'img/echipament/camion-mercedes-fata.jpg',
+				  	    		'img/echipament/camion-mercedes.jpg',
+				  	    		'img/echipament/camion-mercedes-lateral.jpg',
+				  	    		'img/echipament/camion-merces-aproape.jpg',
+				  	    		'img/echipament/camion-unimat-mercedes.jpg',
+				  	    		'img/echipament/compresor.jpg',
+				  	    		'img/echipament/compresor-spate.jpg',
+				  	    		'img/echipament/motostivuitor-lateral.jpg',
+				  	    		'img/echipament/peugeot.jpg',
+				  	    		'img/echipament/peugeot-lateral.jpg',
 					  	  );
   	    $polySeriesThumbsArray = array('http://placehold.it',
 					  	    		   'http://placehold.it',
@@ -101,19 +100,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <div class="fill" style="background-image:url('img/echipament/camion-unimat-mercedes.JPG');"></div>
+            <div class="fill" style="background-image:url('img/proiect-tehnic-executie/green leaves reflecting in the water, shallow focus _10231969.jpg');"></div>
             <div class="carousel-caption">
               <h1>Echipament</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('img/echipament/camion-mercedes-fata.JPG');"></div>
+            <div class="fill" style="background-image:url('img/echipament/camion-mercedes-lateral.jpg');"></div>
             <div class="carousel-caption">
               <h1>Echipament</h1>
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('img/echipament/camion-macara.JPG');"></div>
+            <div class="fill" style="background-image:url('img/echipament/camion-macara.jpg');"></div>
             <div class="carousel-caption">
               <h1>Echipament</h1>
             </div>

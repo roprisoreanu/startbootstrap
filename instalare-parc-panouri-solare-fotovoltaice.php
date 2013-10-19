@@ -88,6 +88,11 @@
     </div>
 
     <div class="container">
+    <ul class="nav nav-pills nav-stacked navbar-fixed-left">
+	  <li class="active"><a href="#">Home</a></li>
+	  <li><a href="#">Profile</a></li>
+	  <li><a href="#">Messages</a></li>
+	</ul>
       <div class="row section">
         <div class="col-lg-12">
 			<div class="well well-large well-transparent clearfix">

@@ -47,7 +47,7 @@
 	  	    	<div class='clearfix'></div>
 	  	    	<!-- " . $category . " -->
 	  	    	<div class='col-lg-12'>
-	  	    	<i class='icon-th-large icon-2x pull-left icon-border'></i>
+	  	    	<i class='icon-th-large icon-2x pull-left icon-border icon-border-grey'></i>
 	  	    	<h1 class='page-header'>" . $category . "</h1>
 	  	    	</div>";
   	    }
@@ -60,11 +60,19 @@
 	               <hr>";
 	         foreach ($thumbsArray as $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
-		         	   <a class='thumbnail' href='#'><img class='img-responsive' 
-		         	   src=" . $placeHolder . "></a>
-		         	   </div>";
+		         			<div class='thumbnail'>
+				         	   <a class='thumbnail thumbnail-details' href='#'><img class='img-responsive' 
+				         	   src=" . $placeHolder . "></a>
+				         	   <div class='caption'>
+					         	   <p>
+						         	   Pret: 400 euro
+						         	   <a href='#' class='btn btn-primary btn-custom float-right'>Detalii</a>
+					         	   </p>
+				         	   </div>
+				         	 </div>
+		              </div>";
 	          } 
-	         echo "</div>
+	         echo "</div> 
 	         	   <hr>
 		           <div class='clearfix'></div>";
   	    }
@@ -116,7 +124,7 @@
       <div class="row section">
         <div class="col-lg-12">
 			<div class="well well-large well-transparent clearfix">
-		        <i class="icon-th-large icon-3x pull-left icon-border"></i>
+		        <i class="icon-th-large icon-3x pull-left icon-border icon-border-grey"></i>
 		        <h1>Panouri pentru parcuri solare fotovoltaice</h1>
 		         
 	        </div>

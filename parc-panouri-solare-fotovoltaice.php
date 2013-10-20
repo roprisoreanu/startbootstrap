@@ -27,7 +27,7 @@
         <h1><span class='move'>Parcuri fotovoltaice pentru energie verde</span></h1>
         <h2><span class='move'>Experienta in zeci de proiecte de instalare parcuri fotovoltaice</span></h2>
         <h2>si parapete metalic rutier din 2006</h2>
-        <p><a class="btn btn-primary btn-large btn-custom">Contactati-ne pentru cel mai mic pret de pe piata</a></p>
+        <p> <?php echo $contactButton; ?></p>
       </div>
       
        <div class="border-top-1px"></div>

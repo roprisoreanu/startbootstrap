@@ -254,7 +254,7 @@ body {
   font-size: 17px;
   line-height: 1.428571429;
   color: #2f575d;
-  background-color: #dee1dd;
+  background-color: #F5F5F5;
 }
 input,
 button,
@@ -456,7 +456,7 @@ h4 small,
   font-size: 14px;
 }
 .page-header {
-  padding-bottom: 9px;
+  padding-bottom: 20px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #c4cdc1;
 }

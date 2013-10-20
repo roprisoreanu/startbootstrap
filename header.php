@@ -1,3 +1,4 @@
+<?php require_once('buttons.php'); ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,7 @@
     <link href="css/lavish-bootstrap.css" rel="stylesheet"> 
     <!-- Custom CSS for Unimat -->
     <style>
-		.thumbnail {margin:10px;}
+		.thumbnail {margin:10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);}
 		.jumbotron, .thumbnail {
    			 background-image:url('img/plante-verzi-reflectie-apa.jpg');}
 		.green-h1 { color:#006A4D; }
@@ -60,5 +61,24 @@
 		.navbar-brand.navbar-mauve:hover, .nav.navbar-nav.navbar-mauve li:hover { background-color: hsl(83, 41%, 67%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3f7ed", endColorstr="#b2cd88"); background-image: -khtml-gradient(linear, left top, left bottom, from(#f3f7ed), to(#b2cd88)); background-image: -moz-linear-gradient(top, #f3f7ed, #b2cd88); background-image: -ms-linear-gradient(top, #f3f7ed, #b2cd88); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f7ed), color-stop(100%, #b2cd88)); background-image: -webkit-linear-gradient(top, #f3f7ed, #b2cd88); background-image: -o-linear-gradient(top, #f3f7ed, #b2cd88); background-image: linear-gradient(#f3f7ed, #b2cd88); border-color: #b2cd88 #b2cd88 hsl(83, 41%, 60%); color: hsl(312, 30%, 1%) !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.46); -webkit-font-smoothing: antialiased; }
 		.float-right { float:right; }
 		.icon-border-grey {border: 1px solid #C4BEBE;}
+			   
+		.modal-body {
+        position: relative;
+        padding: 20px;
+        min-width: 800px; /* SET THE WIDTH OF THE MODAL */
+	    }	
+	    .modal-content {
+	        position: relative;
+	        background-color: #fff;
+	        border: 1px solid #999;
+	        border: 1px solid rgba(0,0,0,0.2);
+	        border-radius: 6px;
+	        outline: 0;
+	        -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+	        box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+	        background-clip: padding-box;
+	        width: 1000px; /* SET THE WIDTH OF THE MODAL */
+	        margin: 50px 0 0 -150px; /* CHANGE MARGINS TO ACCOMMODATE THE NEW WIDTH */
+	    }
 	</style> 
 </head>

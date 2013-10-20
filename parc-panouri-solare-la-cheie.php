@@ -47,7 +47,7 @@
 	  	    	<div class='clearfix'></div>
 	  	    	<!-- " . $category . " -->
 	  	    	<div class='col-lg-12'>
-	  	    	<i class='icon-th-large icon-2x pull-left icon-border icon-border-grey'></i>
+	  	    	<i class='icon-th-large icon-2x pull-left icon-border'></i>
 	  	    	<h1 class='page-header'>" . $category . "</h1>
 	  	    	</div>";
   	    }
@@ -65,6 +65,7 @@
 				         	   src=" . $placeHolder . "></a>
 				         	   <div class='caption'>
 					         	   <p>
+					         	   <a href='#'>ET-P672BB 290W-300W</a>
 						         	   Pret: 400 euro
 						         	   <a href='#' class='btn btn-primary btn-custom float-right'>Detalii</a>
 					         	   </p>
@@ -73,7 +74,6 @@
 		              </div>";
 	          } 
 	         echo "</div> 
-	         	   <hr>
 		           <div class='clearfix'></div>";
   	    }
   ?>
@@ -124,7 +124,7 @@
       <div class="row section">
         <div class="col-lg-12">
 			<div class="well well-large well-transparent clearfix">
-		        <i class="icon-th-large icon-3x pull-left icon-border icon-border-grey"></i>
+		        <i class="icon-th-large icon-3x pull-left icon-border"></i>
 		        <h1>Panouri pentru parcuri solare fotovoltaice</h1>
 		         
 	        </div>
@@ -136,7 +136,7 @@
 			  <li><i class="icon-li icon-ok"></i>Sunt certificate TUV si UL</li>
 			  <li><i class="icon-li icon-ok"></i>Procesul de fabricatie este supus unui control de calitate strict</li>
 			</ul>
-			<h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
+			<h1><?php echo $contactButton; ?></h1>
         </div>
         
         <?php displayCategory("Module fotovoltaice de tip ET");?>
@@ -166,7 +166,7 @@
 			</ul>
         </div>
       </div>
-      <h1><a href="#" class="btn btn-primary">Contactati-ne pentru cel mai mic pret de pe piata</a></h1>
+      <h1><?php echo $contactButton; ?></h1>
        <?php require_once('footer.php'); ?>
     </div><!-- /.container -->
 

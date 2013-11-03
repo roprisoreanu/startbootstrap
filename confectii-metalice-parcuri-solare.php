@@ -94,68 +94,6 @@
 		        <i class="icon-th-large icon-3x pull-left icon-border"></i>
 		        <h1>Oferim confectii metalice pentru parcuri solare fotovoltaice</h1>
 	        </div>
-	        
-	        <!-- Button trigger modal -->
-			  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
-			
-			  <!-- Modal -->
-			  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			    <div class="modal-dialog">
-			      <div class="modal-content">
-			      
-			      <div class="modal-header">
-			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			          <h4 class="modal-title">ET-M572BB</h4>
-			      </div>
-			         <!-- Tabs -->
-			         <div class="tabbable">
-					 	<ul class="nav nav-tabs">
-						  <li class="active"><a href="#modal-body" data-toggle="tab">Acasa</a></li>
-						  <li><a href="#modal-body-datasheet" data-toggle="tab">Datasheet</a></li>
-						  <li><a href="#modal-body-certificare" data-toggle="tab">Certificare</a></li>
-						  <li><a href="#modal-body-garantie" data-toggle="tab">Garantie</a></li>
-						  <li><a href="#modal-body-ghid" data-toggle="tab">Ghid de instalare</a></li>
-					 	</ul>
-					  <div class="tab-content">
-					    <div id="modal-body" class="tab-pane active">
-					    <pre class="margin">
-					      <?php $description = file_get_contents('magazin-panouri/ET-M572BB/descriere'); 
-					            $lines = file('magazin-panouri/ET-M572BB/descriere', FILE_SKIP_EMPTY_LINES);
-					            echo '<ul class="icons-ul">';
-					            foreach ($lines as $line) {
-					            	echo ' <li><i class="icon-li icon-ok"></i>'. $line . '</li>';
-					            }
-					            echo '</ul>'; ?>
-					   </pre>
-					    </div>
-					    <div id="modal-body-datasheet" class="tab-pane">
-					      <iframe src="http://www.etsolar.com/upload/Product/2013101806102721.pdf" 
-				          style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
-					    </div>
-					    <div id="modal-body-certificare" class="tab-pane">
-					      <iframe src="http://www.etsolar.com/upload/Product/2011080708413424.jpg" 
-					      style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
-					    </div>
-					    <div id="modal-body-garantie" class="tab-pane">
-					      <iframe src="http://www.etsolar.com/upload/Product/2012061112334671.pdf" 
-					      style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
-					    </div>
-					    <div id="modal-body-ghid" class="tab-pane">
-					      <iframe src="http://www.etsolar.com/upload/Product/201302210208343.pdf" 
-					      style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
-					    </div>
-					 
-					  </div><!-- /.tab-content -->
-					</div><!-- /.tabbable -->
-			        
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-			        </div>
-			        
-			      </div><!-- /.modal-content -->
-			    </div><!-- /.modal-dialog -->
-			  </div><!-- /.modal -->
-	        
 	        <ul class="icons-ul">
 			  <li>
 			  	<i class="icon-li icon-ok"></i>Oferim solutia completa de confectii metalice pentru parcurile foto-voltaice.

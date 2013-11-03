@@ -83,5 +83,8 @@
 	        width: 1000px; /* SET THE WIDTH OF THE MODAL */
 	        margin: 50px 0 0 -150px; /* CHANGE MARGINS TO ACCOMMODATE THE NEW WIDTH */
 	    }
+	    iframe { 
+			min-height: 600px; 
+		}
 	</style> 
 </head>

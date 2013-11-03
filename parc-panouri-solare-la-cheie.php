@@ -5,43 +5,8 @@
   		$htmlTitle = "Parcuri solare fotovoltaice";
 	    $htmlDescription = "Parcuri solare fotovoltaice, solutii complete la cheie";
   		require_once 'header.php';
-  		
-  	    $monoSeriesThumbsArray = array('img/magazin-online/monocristaline/ET-M572BB-180W-205W',
-					  	    		   'img/magazin-online/monocristaline/ET-M660BB-235W-255W',
-					  	    		   'img/magazin-online/monocristaline/ET-M672BB-280W-305W',
-					  	    		   'img/magazin-online/monocristaline/ET-M572WW-185W-210W',
-						  	    	   'img/magazin-online/monocristaline/ET-M660WW-235W-260W',
-						  	    	   'img/magazin-online/monocristaline/ET-M672WW-280W-310W',
-					  	    	);
-  	    $polySeriesThumbsArray = array('img/magazin-online/policristaline/ET-P660BB-225W-255W',
-					  	    		   'img/magazin-online/policristaline/ET-P660BB-225W-255W',
-					  	    		   'img/magazin-online/policristaline/ET-P672WB-WW-270W-300W',
-					  	    		   'img/magazin-online/policristaline/ET-P672BB-270W-300W',
-					  	    	);
-  	    
-  	    $doubleGlassThumbsArray  = array('img/magazin-online/double-glass/modul-double-glass',
-					  	    	);
-  	    
-  	    $transparentThumbsArray  = array('img/magazin-online/transparente/M572TL-180W-200W',
-						  	    		'img/magazin-online/transparente/M572TW-180W-200W',
-						  	    		'img/magazin-online/transparente/M660TW-235W-255W',
-						  	    		'img/magazin-online/transparente/M672TW-280W-305W',
-						  	    		'img/magazin-online/transparente/P660TW-225W-250W',
-						  	    		'img/magazin-online/transparente/P672TW-270W-300W',
-  	    );
-  	    
-  	    $framelessThumbsArray  = array('img/magazin-online/frameless/ET-M572BL-180W-200W',
-					  	    		   'img/magazin-online/frameless/ET-M572WL-185W-205W',
-					  	    		   'img/magazin-online/frameless/ET-P660WL-225W-250W',
-					  	    		   'img/magazin-online/frameless/ET-P672WL-270W-300W',
-					  	    	);
-  	    $inverterThumbsArray  = array('img/magazin-online/invertoare/13kw17kw20kw',
-					  	    		   'img/magazin-online/invertoare/1kw15kw2kw',
-					  	    		   'img/magazin-online/invertoare/3k5kw',
-					  	    		   'img/magazin-online/invertoare/3kw4kw5kw',
-					  	    	);
-  	    
-  	      	    
+  		require_once 'thumbsData.php';
+  		    
   	    function displayCategory($category) {
   	    	echo "<hr>
 	  	    	<div class='clearfix'></div>
@@ -52,7 +17,7 @@
 	  	    	</div>";
   	    }
   	    
-  	    function displaySubCategory($subCategory, $thumbsArray) {
+  	    function displaySubCategory($subCategory, $thumbsArray, $countPreviousArray) {
   	    	echo " <!-- " . $subCategory . " -->
 	     		   <div class='col-lg-12'>
 	               <i class='icon-th-large icon-1x pull-left icon-border'></i>
@@ -60,14 +25,15 @@
 	               <hr>";
   	    	
 	         foreach ($thumbsArray as $key => $placeHolder) { 
+	         	$key = $key + $countPreviousArray;
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
 		         			<div class='thumbnail'>
 				         	   <a class='thumbnail thumbnail-details' href='#'><img class='img-responsive' 
-				         	   src=" . $placeHolder . "></a>
+				         	   src=" . $placeHolder[0] . "></a>
 				         	   <div class='caption'>
 					         	   <p>
-					         	   <a href='#'>ET-P672BB 290W-300W</a>
-						         	   Pret: 400 euro
+					         	   <a href='#'>" . substr($placeHolder[0], strrpos( $placeHolder[0], '/' ) + 1) . "</a>
+						         	   Pret: " . $placeHolder[1] . " euro
 						         	   <a data-toggle='modal' href='#my" . $key . "Modal' class='btn btn-primary btn-custom float-right'>Detalii</a>
 					         	   </p>
 				         	   </div>
@@ -78,8 +44,8 @@
 		           <div class='clearfix'></div>";
   	    }
   	    
-  	    function displayModal($thumbsArray) {
-  	    	foreach ($thumbsArray as $key => $placeHolder) {
+  	    function displayModal($min, $max) {
+  	    		for ($key = $min; $key <= $max; $key++) {
   	    		echo " <!-- Modal -->
   	    		<div class='modal fade' id='my". $key . "Modal' tabindex='-1' role='dialog' aria-labelledby='my". $key . "ModalLabel' aria-hidden='true'>
   	    		<div class='modal-dialog'>
@@ -102,7 +68,7 @@
 	  	    		 
 	  	    		<div class='tab-content'>
 	  	    		 
-		  	    		<div id='modal-". $key ."body' class='tab-pane active'>
+		  	    		<div id='modal-". $key ."body' class='tab-pane active modal-body'>
 		  	    		<pre class='margin'>";
 		  	    		$description = file_get_contents('magazin-panouri/ET-M572BB/descriere');
 		  	    		$lines = file('magazin-panouri/ET-M572BB/descriere', FILE_SKIP_EMPTY_LINES);
@@ -147,7 +113,6 @@
   	    		</div><!-- /.modal-dialog -->
   	    		</div><!-- /.modal -->";
   	    }
-  	    return count($thumbsArray);
   	}
   ?>
  
@@ -214,25 +179,31 @@
         
         <?php displayCategory("Module fotovoltaice de tip ET");?>
 	     
-	    <?php displaySubCategory("Mono series", $monoSeriesThumbsArray);?>
-	    <?php $count = displayModal($monoSeriesThumbsArray);?>
+	    <?php displaySubCategory("Mono series", $monoSeriesThumbsArray, 0);?>
+	    <?php $countMonoSeries = count($monoSeriesThumbsArray);
+	          displayModal(0, $countMonoSeries);?>
 	    
-	    
-        <?php displaySubCategory("Poly series", $polySeriesThumbsArray);?>
-        
-        <?php $count = $count + count($polySeriesThumbsArray); displayModal($count);?>
+        <?php $min = $countMonoSeries + 1;
+              $max = count($countMonoSeries) + count($polySeriesThumbsArray);
+              $maxSubCategory = $max + 1;
+              displaySubCategory("Poly series", $polySeriesThumbsArray, $maxSubCategory);
+              displayModal($min, $max);?>
           
         <?php displayCategory("Module fotovoltaice de tip BIPV");?>
 	     
-	    <?php displaySubCategory("Double glass", $doubleGlassThumbsArray);?>
+	    <?php $maxSubCategory = $min + count($doubleGlassThumbsArray) + 2;
+	          displaySubCategory("Double glass", $doubleGlassThumbsArray, $maxSubCategory);?>
 	      
-	    <?php displaySubCategory("Transparent", $transparentThumbsArray);?>
+	    <?php $maxSubCategory =  count($transparentThumbsArray) + 5;
+	          displaySubCategory("Transparent", $transparentThumbsArray, $maxSubCategory);?>
         
-        <?php displaySubCategory("Frameless", $framelessThumbsArray);?>
+        <?php $maxSubCategory = count($framelessThumbsArray) + 12;
+        	  displaySubCategory("Frameless", $framelessThumbsArray, $maxSubCategory);?>
         
         <?php displayCategory("Invertoare");?>
        
-        <?php displaySubCategory("Invertoare de tip ET", $inverterThumbsArray);?>
+        <?php $maxSubCategory = count($inverterThumbsArray) + 16;
+        	  displaySubCategory("Invertoare de tip ET", $inverterThumbsArray, $maxSubCategory);?>
         
         <hr>
         <div class="col-lg-12">

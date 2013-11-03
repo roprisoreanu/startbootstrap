@@ -51,14 +51,15 @@
 	  	    	<h1 class='page-header'>" . $category . "</h1>
 	  	    	</div>";
   	    }
-  	    $counter = 0;
+  	    
   	    function displaySubCategory($subCategory, $thumbsArray) {
   	    	echo " <!-- " . $subCategory . " -->
 	     		   <div class='col-lg-12'>
 	               <i class='icon-th-large icon-1x pull-left icon-border'></i>
 	               <h2>" . $subCategory ."</h2>
 	               <hr>";
-	         foreach ($thumbsArray as $placeHolder) { 
+  	    	
+	         foreach ($thumbsArray as $key => $placeHolder) { 
 		         echo "<div class='col-lg-3 col-md-4 col-xs-6 thumb'>
 		         			<div class='thumbnail'>
 				         	   <a class='thumbnail thumbnail-details' href='#'><img class='img-responsive' 
@@ -67,7 +68,7 @@
 					         	   <p>
 					         	   <a href='#'>ET-P672BB 290W-300W</a>
 						         	   Pret: 400 euro
-						         	   <a href='#' class='btn btn-primary btn-custom float-right'>Detalii</a>
+						         	   <a data-toggle='modal' href='#my" . $key . "Modal' class='btn btn-primary btn-custom float-right'>Detalii</a>
 					         	   </p>
 				         	   </div>
 				         	 </div>
@@ -76,6 +77,78 @@
 	         echo "</div> 
 		           <div class='clearfix'></div>";
   	    }
+  	    
+  	    function displayModal($thumbsArray) {
+  	    	foreach ($thumbsArray as $key => $placeHolder) {
+  	    		echo " <!-- Modal -->
+  	    		<div class='modal fade' id='my". $key . "Modal' tabindex='-1' role='dialog' aria-labelledby='my". $key . "ModalLabel' aria-hidden='true'>
+  	    		<div class='modal-dialog'>
+  	    		<div class='modal-content'>
+  	    	
+  	    		<div class='modal-header'>
+  	    		<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+  	    		<h4 class='modal-title'>ET-M572BB</h4>
+  	    		</div>
+  	    		
+  	    		<!-- Tabs -->
+  	    		<div class='tabbable'>
+	  	    		<ul class='nav nav-tabs'>
+		  	    		<li class='active'><a href='#modal-". $key ."body' data-toggle='tab'>Acasa</a></li>
+		  	    		<li><a href='#modal-body-". $key ."datasheet' data-toggle='tab'>Datasheet</a></li>
+		  	    		<li><a href='#modal-body-". $key ."certificare' data-toggle='tab'>Certificare</a></li>
+		  	    		<li><a href='#modal-body-". $key ."garantie' data-toggle='tab'>Garantie</a></li>
+		  	    		<li><a href='#modal-body-". $key ."ghid' data-toggle='tab'>Ghid de instalare</a></li>
+	  	    		</ul>
+	  	    		 
+	  	    		<div class='tab-content'>
+	  	    		 
+		  	    		<div id='modal-". $key ."body' class='tab-pane active'>
+		  	    		<pre class='margin'>";
+		  	    		$description = file_get_contents('magazin-panouri/ET-M572BB/descriere');
+		  	    		$lines = file('magazin-panouri/ET-M572BB/descriere', FILE_SKIP_EMPTY_LINES);
+		  	    		echo "<ul class='icons-ul'>";
+		  	    		 
+		  	    		foreach ($lines as $line) {
+		  	    			echo " <li><i class='icon-li icon-ok'></i>". $line . '</li>';
+		  	    		} 
+		  	    		
+		  	    		echo "</ul></pre>
+		  	    		</div>
+		  	    	
+		  	    		<div id='modal-body-". $key ."datasheet' class='tab-pane'>
+		  	    		<iframe src='http://www.etsolar.com/upload/Product/2013101806102721.pdf'
+		  	    		style='zoom:0.60' width='99.6%' height='250' frameborder='0'></iframe>
+		  	    		</div>
+		  	    	
+		  	    		<div id='modal-body-". $key ."certificare' class='tab-pane'>
+		  	    		<iframe src='http://www.etsolar.com/upload/Product/2011080708413424.jpg'
+		  	    		style='zoom:0.60' width='99.6%' height='250' frameborder='0'></iframe>
+		  	    		</div>
+		  	    	
+		  	    		<div id='modal-body-". $key ."garantie' class='tab-pane'>
+		  	    		<iframe src='http://www.etsolar.com/upload/Product/2012061112334671.pdf'
+		  	    		style='zoom:0.60' width='99.6%' height='250' frameborder='0'></iframe>
+		  	    		</div>
+		  	    	
+		  	    		<div id='modal-body-". $key ."ghid' class='tab-pane'>
+		  	    		<iframe src='http://www.etsolar.com/upload/Product/201302210208343.pdf'
+		  	    		style='zoom:0.60' width='99.6%' height='250' frameborder='0'></iframe>
+		  	    		</div>
+	  	    		 
+	  	    		</div><!-- /.tab-content -->
+  	    		
+  	    		</div><!-- /.tabbable -->
+  	    	
+  	    		<div class='modal-footer'>
+  	    		<button type='button' class='btn btn-primary' data-dismiss='modal'>Close</button>
+  	    		</div>
+  	    	
+  	    		</div><!-- /.modal-content -->
+  	    		</div><!-- /.modal-dialog -->
+  	    		</div><!-- /.modal -->";
+  	    }
+  	    return count($thumbsArray);
+  	}
   ?>
  
   <body>
@@ -142,8 +215,12 @@
         <?php displayCategory("Module fotovoltaice de tip ET");?>
 	     
 	    <?php displaySubCategory("Mono series", $monoSeriesThumbsArray);?>
+	    <?php $count = displayModal($monoSeriesThumbsArray);?>
+	    
 	    
         <?php displaySubCategory("Poly series", $polySeriesThumbsArray);?>
+        
+        <?php $count = $count + count($polySeriesThumbsArray); displayModal($count);?>
           
         <?php displayCategory("Module fotovoltaice de tip BIPV");?>
 	     
